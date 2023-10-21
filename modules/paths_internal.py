@@ -9,7 +9,7 @@ commandline_args = os.environ.get('COMMANDLINE_ARGS', "")
 sys.argv += shlex.split(commandline_args)
 
 modules_path = os.path.dirname(os.path.realpath(__file__))
-script_path = os.path.dirname(modules_path)
+script_path = "/content"
 
 sd_configs_path = os.path.join(script_path, "configs")
 sd_default_config = os.path.join(sd_configs_path, "v1-inference.yaml")
